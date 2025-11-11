@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <nav class="nav">
+        <div class="navbar">
+            <div > <a href="{% url 'index' %}" class="navicon">{Finsweet</a></div>
+                <ul class="navlist">
+                    <li> <a href="{% url 'index' %}" class="list {% if request.resolver_match.url_name == 'index' %}active{% endif %}">Home</a></li>
+                    <li><a href="{% url 'blog' %}" class="list {% if request.resolver_match.url_name == 'blog' %}active{% endif %}">Blog</a></li>
+                    <li><a href="{% url 'aboutus' %}" class="list {% if request.resolver_match.url_name == 'aboutus' %}active{% endif %}">About Us</a></li>
+                    <li><a href="{% url 'contact' %}" class="list {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact Us</a></li>
+                    <button><a href="{% url 'contact' %}" >Subscribe</a></button>
+                </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+
+    
+    {% endblock content %}
+
+<footer class="footer">
+     <nav class="nav">
+        <div class="navbar">
+            <div > <a href="#" class="navicon">{Finsweet</a></div>
+                <ul class="navlist">
+                    <li> <a href="{% url 'index' %}"  class="list {% if request.resolver_match.url_name == 'index' %}active{% endif %}" >Home</a></li>
+                    <li><a href="{% url 'blog' %}"  class="list {% if request.resolver_match.url_name == 'blog' %}active{% endif %}">Blog</a></li>
+                    <li><a href="{% url 'aboutus' %}"  class="list {% if request.resolver_match.url_name == 'aboutus' %}active{% endif %}">About Us</a></li>
+                    <li><a href="{% url 'contact' %}"  class="list {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact Us</a></li>
+                    <li><a href="{% url 'privacy' %}"  class="list {% if request.resolver_match.url_name == 'privacy' %}active{% endif %}">Privacy Policy</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <div class="subscribe">
+        <h2>Subscribe to ur news letter to get <br> the latest updates and news</h2>
+        <form action="{% url 'subscribe' %}" class="subscribe-form" method="POST">
+            {% csrf_token %}
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <button type="submit" >Subscribe</button>
+        </form>
+    </div>
+
+    <div class="contact">
+        <div>
+            <p>Finstreet 118 2561 Fintown</p>
+            <p>Hello@Finsweet.com 020 7993 2905</p>
+        </div>
+        <div class="socials">
+            <img src="{% static 'images/Facebook/Negative.png' %}" alt="">
+            <img src="{% static 'images/Twitter/Negative.png' %}" alt="">
+            <img src="{% static 'images/Instagram/Negative.png' %}" alt="">
+            <img src="{% static 'images/Linkedin/Negative.png' %}" alt="">
+        </div>
+    </div>
+
+
+</footer>
+
+</body>
+</html>

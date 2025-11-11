@@ -1,0 +1,215 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+<header>
+    {% comment %} <img src="{% static 'images/startup.png' %}" > {% endcomment %}
+    <p>POSTED ON <b>STARTUP</b></p>
+    <h1>Step-by-step guide to choosing <br> great font pairs</h1>
+    <p>By <span class="author">james West</span> | May 23,2022</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    <button><a href="{% url 'aboutus' %}">Read More ></a></button>
+
+</header>
+
+<section class="POST">
+
+
+    <div class="Featured">
+        <h2 class="feat">Featured Post</h2> <br>
+        <div class="feat_img">
+        <img src="{% static 'images/Post.png' %}" class="imgpost">
+        <p>By <span class="john">john Doe</span> May 23,2022</p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Ipsam ad facere atque. </h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <button class="read_btn"><a href=" {% url 'blog' %}">Read More</a></button>
+        </div>
+    </div>
+
+    <div class="Allpost">
+        <div class="all-header">
+        <h2 class="post"> All Posts</h2>
+        <a href="{% url 'blogpost' %}">view all</a>
+        </div>
+        <div class="figma">
+            <p>By <span class="john">john Doe</span> Aug 23,2021</p>
+            <h4>8 Figma design systems that <br> you can download for free today.</h4>
+        </div>
+        <div class="figma">
+            <p>By <span class="john">john Doe</span> Aug 23,2021</p>
+            <h4>8 Figma design systems that <br> you can download for free today.</h4>
+        </div>
+        <div class="figma">
+            <p>By <span class="john">john Doe</span> Aug 23,2021</p>
+            <h4>8 Figma design systems that <br> you can download for free today.</h4>
+        </div>
+        <div class="figma">
+            <p>By <span class="john">john Doe</span> Aug 23,2021</p>
+            <h4>8 Figma design systems that <br> you can download for free today.</h4>
+        </div>
+    </div>
+
+</section>
+
+<section class="section2">
+    <div class="colors">
+        <div class="yellow"> </div>
+        <div class="purple"></div>
+    </div> 
+    <div class="Us">
+        <div class="Aboutus">
+            <p>ABOUT US</p>
+            <h2 class="message">We are a community of content <br> writers who share their learning</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo <br> accusantium, eius optio rem maxime laboriosam.</p>
+            <a href="{% url 'blog' %}" class="read">Read more ></a>
+        </div>
+        <div class="Mission">
+            <p>OUR MISSION</p>
+            <h2 class="message2">Creating valuable contents for <br>creatives all over the world</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quis natus maiores exercitationem nobis aspernatur placeat <br> nisi repellendus facilis ab, illo aliquam at cum sapiente quae <br> modi accusantium deleniti, consequatur libero.</p>
+        </div>
+    </div>   
+</section>
+
+<section class="section3">
+    <h2 class="choose">Choose A Category</h2>
+    <div class="category">
+        <div class="category1">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img src="{% static 'images/Business.png' %}" >
+           <h2>Business</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+           </a>
+        </div>
+        <div class="category2">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img class="img2" src="{% static 'images/Icon-startup.png' %}" >
+           <h2>Startup</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+            </a>
+        </div>
+        <div class="category1">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img src="{% static 'images/Economy.png' %}" >
+           <h2>Econonmy</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+            </a>
+        </div>
+        <div class="category1">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img src="{% static 'images/Tech.png' %}" >
+           <h2>Technology</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ! why we started -->
+<section class="why-we-started">
+    <div class="box1">
+        <img class="imgwe" src="{% static 'images/We.png' %}" alt="">
+    </div>
+    <div class="box2">
+        <h4>WHY WE STARTED</h4>
+        <H2>IT started out as a simple <br> idea and evolved into our <br> passion </H2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa aut nesciunt quam quo soluta error perspiciatis eius harum distinctio dolorem rem dignissimos, temporibus voluptas vel cum possimus molestiae. Numquam, repellat.</p>
+        <button><a href="">Discover our story ></a></button>
+    </div>
+
+</section>
+<br>
+
+<section class="section5">
+    <h2 class="head">List of Authors</h2>
+    <div class="Authors">
+        <div class="boxes" >
+            <img class="aut_icon" src="{% static 'images/floyd.png' %}" alt="">
+            <h2>floyd Miles</h2>
+            <p>Content Writer@Company</p>
+            <div>
+                <img src="{% static 'images/Twitter/Negative.png' %}" alt="">
+                <img src="{% static '/images/Facebook/Negative.png' %}" alt="">
+                <img src="{% static 'images/Instagram/Negative.png' %}" alt="">
+                <img src="{% static 'images/Linkedin/Negative.png' %}" alt="">
+            </div>
+        </div> 
+        <div class="boxes" >
+            <img class="aut_icon" src="{% static 'images/Dianne.png' %}" alt="">
+            <h2>Dianne Russell</h2>
+            <p>Content Writer@Company</p>
+            <div>
+                <img src="{% static 'images/Twitter/Negative.png' %}" alt="">
+                <img src="{% static '/images/Facebook/Negative.png' %}" alt="">
+                <img src="{% static 'images/Instagram/Negative.png' %}" alt="">
+                <img src="{% static 'images/Linkedin/Negative.png' %}" alt="">
+            </div>
+        </div>     
+        <div class="boxes">
+            <img class="aut_icon" src="{% static './images/Jenny.png' %}" alt="">
+            <h2>Jenny Wilson</h2>
+            <p>Content Writer@Company</p>
+            <div>
+                <img src="{% static 'images/Twitter/Negative.png' %}" alt="">
+                <img src="{% static '/images/Facebook/Negative.png' %}" alt="">
+                <img src="{% static 'images/Instagram/Negative.png' %}" alt="">
+                <img src="{% static 'images/Linkedin/Negative.png' %}" alt="">
+            </div>
+        </div>     
+        <div class="boxes" >
+            <img class="aut_icon" src="{% static './images/Lesliy.png' %}" alt="">
+            <h2>Leslie Alexander</h2>
+            <p>Content Writer@Company</p>
+            <div>
+                <img src="{% static 'images/Twitter/Negative.png' %}" alt="">
+                <img src="{% static '/images/Facebook/Negative.png' %}" alt="">
+                <img src="{% static 'images/Instagram/Negative.png' %}" alt="">
+                <img src="{% static 'images/Linkedin/Negative.png' %}" alt="">
+            </div>
+        </div>     
+    </div>
+    
+    <div class="logo">
+        <img src="{% static '/images/Group 9205.png' %}" alt="">
+        <img src="{% static '/images/Group 9206.png' %}" alt="">
+        <img src="{% static '/images/Group 9207.png' %}" alt="">
+        <img src="{% static '/images/Group 9208.png' %}" alt="">
+        <img src="{% static '/images/Group 9209.png' %}" alt="">
+    </div>
+
+</section>
+
+<!-- ! testimonials -->
+<section>
+    <div class="testimonials">
+        <div>
+            <h4>TESTIMONIALS</h4>
+            <H2>What people say  about <br> our blog</H2>
+            <p>Lorem ipsum dolor sit amet  consectetur  adipisicing <br> elit, Nostrum voluptatem .</p>
+        </div>
+        <div class="lorem">
+           <p> Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Doloribus, tenetur <br> iure necessitatibus inventore, laborum, <br>facilis quia excepturi officiis  .</p>
+           <div class="profilewrap">
+            <div class="profile">
+                <img class="vallem" src="{% static '/images/vallem.png' %}" alt="">
+                <h4>Jonathan Vallem <br> <span class="usa">new york, usa</span>  </h4>
+                
+            </div>
+            <div class="arrows">
+                <div class="arrowleft">←</div>
+                <div class="arrowright">→</div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="team">
+        <h2>Join our team to be a part <br>of our story</h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Accusamus repudiandae quod sunt quia.</p>
+        <button><a href="">Join Now</a></button>
+   </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,79 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+<section>
+
+        <div class="andrew-blog">
+            <div class="cover">
+                <img src="{% static 'images/andrew.png' %}" alt="">
+                <div class="andrew">
+                    <h3>Andrew jonson</h3>
+                    <p>posted on 27th january 2022</p>
+                </div>
+            </div>
+            
+            <h2 class="step">Step-by-step guide to choosing <br> great font pairs</h2>
+            <div class="cover2">
+            <img src="{% static 'images/Icon-startup.png' %}" alt="">
+            <h3>Startup</h3>
+            </div>
+        </div>  
+
+<img class="glass" src="{% static 'images/blog/photo-of-woman-wearing-eyeglasses-3184405.png' %}" alt="">
+
+<div class="andrew-post">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+    <br><br>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+    <div>
+    <ul class="andrew-list">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Non blandit massa enim nec scelerisque</li>
+        <li>Neque egestas congue quisque egestas</li>
+    </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+    <br><br>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+</div>
+</section>
+
+<section class="section-post">
+    <h2 class="post-head">What to read next</h2>
+
+    <div class="other-post">
+        <div class="UX">
+            <img src="{% static 'images/blog/photo1.png' %}" alt="">
+            <p> By <span class="authors" >John Doe </span> | May,23,2022</p>
+            <h2>A UX Case Study Creating a <br> Studious Environment for <br> Students: </h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+        <div class="UX">
+            <img src="{% static 'images/blog/photo2.png' %}" alt="">
+            <p> By <span class="authors" >John Doe </span> | May,23,2022</p>
+            <h2>A UX Case Study Creating a <br> Studious Environment for <br> Students: </h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+        <div class="UX">
+            <img src="{% static 'images/blog/photo3.png' %}" alt="">
+            <p> By <span class="authors" >John Doe </span> | May,23,2022</p>
+            <h2>A UX Case Study Creating a <br> Studious Environment for <br> Students: </h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+    </div>
+    <br><br>
+<hr>
+
+ <div class="team">
+        <h2>Join our team to be a part <br>of our story</h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Accusamus repudiandae quod sunt quia.</p>
+        <button><a href="{% url 'contact' %}">Join Now</a></button>
+   </div>
+</section>
+{% endblock content %}

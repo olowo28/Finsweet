@@ -1,0 +1,132 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+<section>
+    <div class="blog-header">
+        <Div>
+            <h4>FEATURED POST</h4>
+            <h2>Step-by-step guide to choosing great <br>font pairs</h2>
+            <p>By <span class="authors" >John Doe </span> | May,23,2022</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsum at vel  <br>ex nulla, adipisci ea quo qui maiores illo tempora nihil?</p>
+            <button><a href="{% url 'blogpost' %}">Read More ></a></button>
+
+        </Div>
+        <div>
+            <img src="{% static 'images/blog/man-in-white.png' %}" alt="">
+        </div>
+    </div>
+ </section>
+ 
+ <section>
+    <h2>All posts</h2>
+    <hr>
+    <div class="card">
+        <div class="blog-post">
+            <div>
+                <img src="{% static 'images/blog/photo1.png' %}" alt="">
+            </div>
+            <div class="design">
+                <p class="start">STARTUP</p>
+                <H2>Desgin tips for designers that cover <br> everything you need </H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum, unde accusantium nesciunt iste nobis dolore itaque illum minus. Dolore, et fugit!</p>
+            </div>
+        </div>
+
+         <br><br><br>
+        <div class="blog-post">
+            <div>
+                <img src="{% static 'images/blog/photo2.png' %}" alt="">
+            </div>
+            <div class="design">
+                <p class="start">Business</p>
+                <H2>How to build rapport with your web <br> design clients</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum, unde accusantium nesciunt iste nobis dolore itaque illum minus. Dolore, et fugit!</p>
+            </div>
+        </div>
+         <br><br><br>
+        <div class="blog-post">
+            <div>
+                <img src="{% static 'images/blog/photo3.png' %}" alt="">
+            </div>
+            <div class="design">
+                <p class="start">STARTUP</p>
+                <H2>Logo design trends to avoid in 2022 </H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum, unde accusantium nesciunt iste nobis dolore itaque illum minus. Dolore, et fugit!</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="blog-post">
+            <div>
+                <img src="{% static 'images/blog/photo4.png' %}" alt="">
+            </div>
+            <div class="design">
+                <p class="start">Technology</p>
+                <H2>8 Figma design systems you can <br> download for free today </H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum, unde accusantium nesciunt iste nobis dolore itaque illum minus. Dolore, et fugit!</p>
+            </div>
+        </div>
+
+        <br><br><br>
+       <div class="blog-post">
+            <div>
+                <img src="{% static 'images/blog/photo1.png' %}" alt="">
+            </div>
+            <div class="design">
+                <p class="start">Economy</p>
+                <H2>Font sizes in UI design: The complete guide to follow </H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum, unde accusantium nesciunt iste nobis dolore itaque illum minus. Dolore, et fugit!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <h3>< Prev</h3>
+        <h2> Next ></h2>
+    </div>
+ </section>
+
+ <!-- !categories -->
+ <section class="blog-categories">
+    <h2 class="blog-title">All categories</h2>
+    <div class="category">
+        <div class="category1">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img src="{% static './images/Business.png' %}" >
+           <h2>Business</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+           </a>
+        </div>
+        <div class="category2">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img class="img2" src="{% static './images/Icon-startup.png' %}" >
+           <h2>Startup</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+           </a>
+        </div>
+        <div class="category1">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img src="{% static './images/Economy.png' %}" >
+           <h2>Economy</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+           </a>
+        </div>
+        <div class="category1">
+            <a href="{% url 'category' %}" class="bus-style">
+           <img src="{% static './images/Tech.png' %}" >
+           <h2>Technology</h2>
+           <p>Lorem ipsium dolor sit amet <br> consectetur adipisicing elit.</p>
+           </a>
+        </div>
+
+    </div>
+
+    <div class="team">
+        <h2>Join our team to be a part <br>of our story</h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Accusamus repudiandae quod sunt quia.</p>
+        <button><a href="contact">Join Now</a></button>
+   </div>
+</section>
+
+{% endblock content %}
